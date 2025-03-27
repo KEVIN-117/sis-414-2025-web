@@ -33,3 +33,4 @@
   background: radial-gradient(circle, #5af78e33 0%, transparent 70%);
   border-radius: 50%;
 "></div>
+Algo a tomar muy en cuenta es que todas las practicas se entregan por medio de `GitHub`, y el enlace de su repositorio debe estar en el aula virtual es decir en `classroom`
