@@ -46,7 +46,7 @@ if (numero % 2 === 0) {
 } else {
     console.log(`${numero} es impar`);
 }
-
+```
 ---
 
 ### 4. Bucles
@@ -214,7 +214,7 @@ git push origin main
 **Respuesta:**  
 ```bash
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
-git init --init-branch feature-login
+git init --initial-branch=feature-login
 ```
 
 ---
