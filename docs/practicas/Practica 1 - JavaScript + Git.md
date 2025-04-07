@@ -7,7 +7,10 @@ Declara una variable `nombre` con tu nombre y otra `edad` con tu edad. Luego, mu
 
 **Solución:**  
 ```javascript
-// pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+let name = "Your name";
+let age = 50;
+
+console.log(`"Hola, mi nombre es ${name} y tengo ${age} años."`)
 ```
 
 ---
@@ -18,7 +21,11 @@ Calcula el área de un rectángulo (base = 5, altura = 3) y muestra el resultado
 
 **Solución:**  
 ```javascript
-// pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+let base = 5;
+let altura = 3;
+let area = base * altura;
+console.log(`El área del rectángulo es: ${area}`);
+
 ```
 
 ---
@@ -34,7 +41,11 @@ let numero = 4;
 **Solución:**  
 ```javascript
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
-```
+if (numero % 2 === 0) {
+    console.log(`${numero} es par`);
+} else {
+    console.log(`${numero} es impar`);
+}
 
 ---
 
@@ -43,8 +54,12 @@ let numero = 4;
 Usa un bucle `for` para imprimir los números del 1 al 5.  
 
 **Solución:**  
+
 ```javascript
-// pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
 ```
 
 ---
@@ -56,6 +71,10 @@ Crea una función `sumar` que reciba dos números y devuelva su suma.
 **Solución:**  
 ```javascript
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+function sumar(a, b) {
+    return a + b;
+}
+console.log(sumar(3, 4)); // 7
 ```
 
 ---
@@ -67,6 +86,9 @@ Dado el array `let frutas = ["manzana", "banana", "pera"];`, agrega "uva" al fin
 **Solución:**  
 ```javascript
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+let frutas = ["manzana", "banana", "pera"];
+frutas.push("uva");
+
 ```
 
 ---
@@ -78,6 +100,13 @@ Crea un objeto `usuario` con las propiedades `nombre` (string) y `edad` (number)
 **Solución:**  
 ```javascript
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+let usuario = {
+    nombre: "Juan",
+    edad: 30
+};
+for (let key in usuario) {
+    console.log(`${key}: ${usuario[key]}`);
+}
 ```
 
 ---
@@ -91,6 +120,11 @@ Pista: para hacer esta pregunta te recomiendo que investigues sobre lo métodos 
 **Solución:**  
 ```javascript
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+let numeros = [1, 2, 3, 4];
+let numerosMultiplicados = numeros.map(function(numero) {
+    return numero * 2;
+});
+console.log(numerosMultiplicados); // [2, 4, 6, 8]
 ```
 
 ---
@@ -107,6 +141,8 @@ function restar(a, b) {
 **Solución:**  
 ```javascript
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+const restar = (a, b) => a - b;
+console.log(restar(5, 3)); // 2
 ```
 
 ---
@@ -125,6 +161,8 @@ filtrarPares([1, 2, 3, 4]); // [2, 4]
 **Solución:**  
 ```javascript
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+const filtrarPares = (numeros) => numeros.filter(numero => numero % 2 === 0);
+console.log(filtrarPares([1, 2, 3, 4])); // [2, 4]
 ```
 
 ---
@@ -138,6 +176,7 @@ filtrarPares([1, 2, 3, 4]); // [2, 4]
 **Respuesta:**  
 ```bash
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+git init
 ```
 
 ---
@@ -149,6 +188,7 @@ filtrarPares([1, 2, 3, 4]); // [2, 4]
 **Respuesta:**  
 ```bash
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+git clone <url_del_repositorio>
 ```
 
 ---
@@ -160,6 +200,10 @@ Explica los pasos para hacer un commit de los cambios en un archivo `index.js`.
 **Respuesta:**  
 ```bash
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+
+git add index.js
+git commit -m "Descripción del commit"
+git push origin main
 ```
 
 ---
@@ -170,6 +214,7 @@ Explica los pasos para hacer un commit de los cambios en un archivo `index.js`.
 **Respuesta:**  
 ```bash
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+git init --init-branch feature-login
 ```
 
 ---
@@ -181,4 +226,5 @@ Explica los pasos para hacer un commit de los cambios en un archivo `index.js`.
 **Respuesta:**  
 ```bash
 // pasado el tiempo de entrega se pubicara la solucion de la practica aqui
+git push origin main
 ```
